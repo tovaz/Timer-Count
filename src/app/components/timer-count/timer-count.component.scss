@@ -1,0 +1,9 @@
+.normal {
+    border-bottom: 2px #ccc;
+    padding: 8px;
+}
+
+.normal h1,h2 { 
+    display: inline; 
+    color: var(--ion-color-primary); 
+}

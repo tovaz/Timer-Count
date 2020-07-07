@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Test for my components
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar color="dark">
+      <ion-title size="large">Test for my components</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header color="dark"> Timer Count </ion-card-header>
+          <ion-card-content>
+            <app-timer-count #time (onCountEnd)="countEnd($event)"></app-timer-count>
+            <br>
+            <ion-buttons>
+              <ion-button (click)="accion('start')">Start</ion-button>
+              <ion-button (click)="accion('pause')">Pause</ion-button>
+              <ion-button (click)="accion('stop')">Stop</ion-button>
+          </ion-buttons>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header color="dark"> Otro </ion-card-header>
+          <ion-card-content>
+
+            <!--form (ngSubmit)="onSubmit($event)">
+              <ion-item>
+                <ion-label>Actividad</ion-label>
+                <ion-input type="text" name="title"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label>Description</ion-label>
+                <ion-textarea  name="description"></ion-textarea>
+              </ion-item>
+              <ion-button type="submit" block>Add Activity</ion-button>
+            </form-->
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    
+  </ion-content>
+
+</ion-content>
